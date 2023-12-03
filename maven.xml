@@ -1,0 +1,35 @@
+### What is Maven?
+--> Maven is a build automation and project management tool that facilitates the build process, dependency management, and project documentation.
+
+### How do you integrate Maven with Jenkins?
+--> Jenkins can integrate with Maven by using the Maven project type. In the Jenkins job configuration, you specify the Maven goals, such as clean install, and Jenkins will run Maven with those goals.
+
+### Explain the purpose of the pom.xml file in Maven.
+--> The pom.xml (Project Object Model) file is the core of a Maven project. It contains configuration information such as project dependencies, plugins, goals, and other settings.
+
+### How do you trigger a Maven build in Jenkins?
+--> A Maven build in Jenkins can be triggered automatically when changes are pushed to the version control system (e.g., using webhooks) or manually by starting a Jenkins job.
+
+What are Maven goals, and how are they used in Jenkins?
+Maven goals are specific tasks that can be executed during the build process. In Jenkins, you specify Maven goals in the job configuration to define what tasks Maven should perform.
+
+Explain the Maven lifecycle phases.
+Maven has predefined build phases like compile, test, package, and install. Each phase represents a stage in the lifecycle of a Maven project.
+
+How do you handle dependencies in a Maven project?
+Dependencies are managed in the pom.xml file. Maven downloads dependencies from repositories specified in the pom.xml when the project is built.
+
+What is the purpose of the settings.xml file in Maven?
+The settings.xml file contains configuration settings for Maven, including repository locations, server credentials, and other build-related settings.
+
+How do you skip tests in a Maven build?
+You can skip tests in Maven by using the -Dmaven.test.skip=true option or by configuring the <skipTests> property in the pom.xml.
+
+Explain the concept of Maven repositories.
+Maven repositories are locations where Maven retrieves dependencies. There are two types: local repositories on the developer's machine and remote repositories for sharing artifacts.
+
+How can you configure Jenkins to use a specific version of Maven?
+In the Jenkins job configuration, you can specify the Maven version to use. Alternatively, you can configure the Jenkins Global Tool Configuration to define Maven installations.
+
+What is the purpose of the mvn clean install command?
+mvn clean install is a common Maven command that cleans the project, compiles the source code, runs tests, and packages the application. It installs the resulting artifact in the local Maven repository.
